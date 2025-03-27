@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ctf Challenge</title> 
+    <link rel="stylesheet" type="text/css" href="Ctf_Challenge_stylesheet.css">
+    <style>
+        img {
+            width: 300px;
+            height: auto; 
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hidden-container {
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+            const hiddenDiv = document.querySelector('.hidden-container');
+            const encodedContent = hiddenDiv.getAttribute('data-hidden');
+            const decodedContent = atob(encodedContent); 
+
+            console.log(decodedContent);
+        };
+    </script>
+</head> 
+<body>
+    <div class="section">
+        <h1>BinHexDec</h1>
+        <p>
+            <script>
+                let timeLeft = 1;
+                const countdownElement = document.createElement("span");
+
+                function updateCountdown() {
+                    countdownElement.textContent = `Time left: ${timeLeft} second`;
+                    if (timeLeft > 0) {
+                        timeLeft--;
+                    } else {
+                        location.reload();
+                    }
+                }
+
+                document.write("<p></p>");
+                document.body.querySelector("p").appendChild(countdownElement);
+                updateCountdown();
+                setInterval(updateCountdown, 1000);
+            </script>
+        </p>
+        <p>Can you find the hidden flag before the timer runs out?</p>
+        <p>The goal is to find the flag that is encoded and obfuscated, this is hint# 1.
+    </div>
+    <div class="section"></div>
+    <img src="https://th.bing.com/th/id/OIP.nRgTSGeac7pM3Nith25qsAHaH_?rs=1&pid=ImgDetMain"/>
+    <div class="section">
+        <h2>Is it here?</h2>
+        <p>Flags, flags, pico, flags. Maybe the flag is hidden <a href="secret.html">here</a>? Or maybe not. Keep looking!<br>
+        Random text: <a href="admin.html">12345</a>, abcdef, hidden clues, or are they? Keep scrolling!</p>
+        <p>More misleading text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.<br>
+        Is the flag in this section? Probably not. But who knows?</p>
+        <div class="section" div="aGlkZGVuX2ZpbGUuaHRtbA=="></div>
+    </div>
+    <div class="section">
+        <h2>Where is the flag?</h2>
+        <p>Flags, flags, pico, flags. Hidden clues everywhere!<br>
+        Random numbers: <a href="HONEYPOT.html">98765</a>, zyxwv, secret codes, or are they distractions?</p>
+        <p>Keep scrolling! The flag might be <a href="hidden.html">here</a>, or it might not be. Don't give up!</p>
+    </div>
+    <div class="section">
+        <h2>More distractions</h2>
+        <p>Flags, flags, pico, flags. So many flags, but none of them are the real one.<br>
+        Random text: qwerty, <a href="file.html">asdfgh</a>, zxcvbn. Are these clues or just noise?</p>
+        <p>Keep scrolling! The flag is hidden somewhere, but you'll have to work for it!</p>
+    </div>
+    <div class="section">
+        <h2>Still looking?</h2>
+        <p>Flags, flags, pico, flags. The flag is definitely not <a href="robots.txt.html">here</a>. Or is it?<br>
+        Random text: 24680, poiuyt, lkjhgf. Keep searching!</p>
+        <p>Don't give up! The flag is hidden somewhere on this page. Keep scrolling!</p>
+    </div>
+    <div class="section">
+        <h2>Almost there?</h2>
+        <p>Flags, flags, pico, flags. So many distractions, but where is the flag?<br>
+        Random text: 13579, <a href="PicoCTF.html">mnbvcx</a>, qazwsx. Keep going!</p>
+        <p>You're doing great! The flag is hidden somewhere on this page. Keep scrolling!</p>
+    </div>
+    <div class="section">
+        <h2>Final clue?</h2>
+        <p>Flags, flags, pico, flags. The flag is not <a href="here.html">here</a>. Or is it?<br>
+        Random text: 112233, aabbcc, xxyyzz. Keep searching!</p>
+        <p>Congratulations! You've scrolled this far. But the flag is still hidden. Keep going!</p>
+    </div>
+    <div class="section">
+        <h2>The real flag</h2>
+        <p>Congratulations! You haven't found the hidden flag!<br>
+        The flag is not: <strong>picoCTF{hidden_flag_here}</strong></p>
+    </div>
+</body>
+</html>

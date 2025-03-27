@@ -1,0 +1,45 @@
+body {
+    background-color: #198b9a;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: to make the box shadow more visible */
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
